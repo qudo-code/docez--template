@@ -1,0 +1,2 @@
+## template.html
+The template file is the HTML document that Doc EZ will inject the generated HTML into. `{NAV}` will be replaced with the nav HTML, and {CONTENT} will be replaced with the main content HTML. You can create a template from scratch or work off of the onr provided in `docez--template` mentioned in "Getting Started".
