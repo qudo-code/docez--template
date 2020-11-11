@@ -79,7 +79,12 @@
                     data-level="1">
                     <a
                         href="#Usage">Usage</a>
-                </div>
+                    <div
+                        class="nav-group"
+                        data-level="2">
+                        <a
+                            href="#Build">Build</a>
+                    </div></div>
             </div>
             <div
                 class="content">
@@ -268,8 +273,6 @@
                             the
                             directory
                             structure.</p>
-                        <p>**Ordering
-                            Files/Folders</p>
                         <h3>Markdown
                             Files</h3>
                         <p>All
@@ -444,7 +447,7 @@
                             nav
                             HTML,
                             and
-                            {CONTENT}
+                            <code>{CONTENT}</code>
                             will
                             be
                             replaced
@@ -506,13 +509,17 @@
                         running
                         the
                         following.</p>
-                    <pre><code class="language-bash">$ docez inputDir outputDir
+                    <div
+                        class="section"
+                        data-level="2"
+                        id="/Build">
+                        <pre><code class="language-bash">$ docez inputDir outputDir
 </code></pre>
-                    <p><a
-                            href="https://github.com/qudo-lucas/docez--template">Example
-                            package.json
-                            usage</a></p>
-                </div>
+                        <p><a
+                                href="https://github.com/qudo-lucas/docez--template">Example
+                                package.json
+                                usage</a></p>
+                    </div></div>
             </div>
         </div>
     </body>

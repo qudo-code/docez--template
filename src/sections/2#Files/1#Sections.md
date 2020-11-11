@@ -1,8 +1,6 @@
 ## /sections
 The sections directory is where `.md` files are stored. Doc EZ will recursively loop over the file tree and generate an `index.html` that mirrors the directory structure.
 
-**Ordering Files/Folders
-
 ### Markdown Files
 All markdown files in `/sections` will be used to generate both the nav as well as the main content.
 
