@@ -84,6 +84,13 @@
                         data-level="2">
                         <a
                             href="#Build">Build</a>
+                    </div>
+                    <div
+                        class="nav-group"
+                        data-level="2">
+                        <a
+                            href="#Advaced-Usage">Advaced
+                            Usage</a>
                     </div></div>
             </div>
             <div
@@ -147,17 +154,18 @@
                         includes
                         a
                         dev
-                        server
-                        and
+                        server,
+                        a
                         build
                         system,
                         and
                         requires
                         almost
                         no
-                        boilerplate?&quot;
-                        he
-                        exclaimed.</p>
+                        boilerplate?&quot;,
+                        exclaimed
+                        the
+                        doctor.</p>
                     <p>Doc
                         Ez
                         proceeded
@@ -177,6 +185,7 @@
                         life's
                         work
                         to
+                        the
                         interwebs
                         for
                         other
@@ -194,7 +203,7 @@
                         data-level="2"
                         id="/Install">
                         <h2>Installation</h2>
-                        <pre><code class="language-bash">$ npm install --save-dev
+                        <pre><code class="language-bash">$ npm install --save-dev docez
 </code></pre>
 
                     </div>
@@ -504,21 +513,71 @@
                         build
                         your
                         docez
-                        project
-                        by
-                        running
-                        the
-                        following.</p>
+                        project.</p>
                     <div
                         class="section"
                         data-level="2"
                         id="/Build">
+                        <h3>CLI
+                            Usage</h3>
                         <pre><code class="language-bash">$ docez inputDir outputDir
 </code></pre>
                         <p><a
                                 href="https://github.com/qudo-lucas/docez--template">Example
                                 package.json
                                 usage</a></p>
+                    </div>
+                    <div
+                        class="section"
+                        data-level="2"
+                        id="/Advaced-Usage">
+                        <h3>Advanced
+                            Usage</h3>
+                        <p>Using
+                            the
+                            module
+                            version
+                            of
+                            Doc
+                            Ez
+                            gives
+                            you
+                            direct
+                            access
+                            to
+                            the
+                            generated
+                            file
+                            tree
+                            as
+                            well
+                            as
+                            the
+                            HTML
+                            allowing
+                            you
+                            to
+                            parse
+                            it
+                            and
+                            compile
+                            it
+                            however
+                            you
+                            like.</p>
+                        <pre><code class="language-javascript">const docez = require(&quot;docez&quot;);
+
+const { tree, html } = docez({
+    input  : &quot;you/input/dir&quot;,
+    output : &quot;your/output/dir&quot;,
+
+    // Don't write out to output/index.html
+    write  : false,
+});
+
+const { nav, content } = html;
+</code></pre>
+
                     </div></div>
             </div>
         </div>

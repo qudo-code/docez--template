@@ -1,3 +1,4 @@
+### CLI Usage
 ```bash
 $ docez inputDir outputDir
 ```
