@@ -15,8 +15,3 @@ By default all files and folders will be sorted alphabetically. If you want to f
 
 _See example usage in diagram above_
 
-## /assets
-Everything thing in the `/assets` directory will be directly copied to the root of the output directory.
-
-## template.html
-The template file is the HTML document that Doc EZ will inject the generated HTML into. `{NAV}` will be replaced with the nav HTML, and {CONTENT} will be replaced with the main content HTML. You can create a template from scratch or work off of the onr provided in `docez--template` mentioned in "Getting Started".
